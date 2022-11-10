@@ -1,10 +1,7 @@
-function buildString(template) {
-    let myStr = [template];
-    // myStr.push(template);
-    // template.join(',')
-    //     ; return 'I like ' + myStr + '!';
-    return myStr;
+function buildString(...template) {
+    return "I like " + template.join(', ') + '!';
 }
+
 
 console.log(buildString('Cheese', 'Milk', 'Chocolate')); // 'I like Cheese, Milk, Chocolate!'
 console.log(buildString('Cheese', 'Milk')); // 'I like Cheese, Milk!'
